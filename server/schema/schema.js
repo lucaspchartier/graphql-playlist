@@ -54,7 +54,7 @@ const RootQuery = new GraphQLObjectType({
         },
         author: {
             type: AuthorType,
-            agrs: { id: { type: GraphQLID } },
+            args: { id: { type: GraphQLID } },
             resolve(parent, args) {
                 // code to get data from db or other source
                 console.log(typeof(args.id));
