@@ -5,7 +5,8 @@ const {
     GraphQLObjectType,
     GraphQLString,
     GraphQLSchema,
-    GraphQLID
+    GraphQLID,
+    GraphQLInt
 } = graphql;
 
 // book array
@@ -35,7 +36,7 @@ const AuthorType = new GraphQLObjectType({
     fields: () => ({
         id: { type: GraphQLID },
         name: { type: GraphQLString },
-        genre: { type: GraphQLString }
+        age: { type: GraphQLInt }
     })
 });
 
