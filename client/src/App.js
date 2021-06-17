@@ -1,5 +1,10 @@
 import React, { Component } from "react";
+import ApolloClient from "apollo-boost";
+
+// components
 import BookList from "./components/BookList";
+
+// Apollo client setup
 
 class App extends Component {
     render() {
