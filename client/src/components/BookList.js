@@ -17,7 +17,7 @@ class BookList extends Component {
         if (data.loading) {
             return ( <div>Loading books...</div> )
         } else {
-            return data.books.map(book => <li>{book.name}</li>);
+            return data.books.map(book => <li key={book.id}>{book.name}</li>);
         }
     }
     
