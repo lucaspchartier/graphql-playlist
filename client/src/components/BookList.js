@@ -13,6 +13,13 @@ const getBooksQuery = gql`
 
 class BookList extends Component {
     render() {
+        const displayBooks = () => {
+            const data = this.props.data;
+            if (data.loading) {
+                return ( <div>Loading books...</div> )
+            }
+        };
+
         return (
             <div>
                 <ul id="book-list">
@@ -23,4 +30,4 @@ class BookList extends Component {
     }
 }
 
-export default BookList;
+export default graphql(getBooksQuery)(BookList);
