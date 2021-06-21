@@ -4,9 +4,9 @@ import { graphql } from "react-apollo";
 
 const getAuthorsQuery = gql`
     {
-        books {
+        authors {
             name
-            id
+            age
         }
     }
 `
