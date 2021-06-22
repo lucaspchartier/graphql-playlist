@@ -37,3 +37,5 @@ class AddBook extends Component {
         );
     }
 }
+
+export default graphql(getAuthorsQuery)(AddBook)
