@@ -5,6 +5,7 @@ import { graphql } from "react-apollo";
 const getAuthorsQuery = gql`
     {
         authors {
+            id
             name
             age
         }
@@ -18,7 +19,6 @@ class AddBook extends Component {
             return ( <option disabled>Loading Authors...</option> );
         } else {
             return data.authors.map(author => {
-                console.log("This is author", author);
                 return (<option key={author.id} value={author.id}>{author.name}</option>);
             });
         }
