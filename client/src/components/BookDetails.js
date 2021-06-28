@@ -12,4 +12,4 @@ class BookDetails extends Component {
     }
 }
 
-export default graphql(getBookQuery)(BookDetails)
+export default graphql(getBookQuery)(BookDetails);
