@@ -55,3 +55,16 @@ form select, form input {
   padding: 6px;
   box-sizing: border-box;
 }
+
+form button {
+  color: #FFF;
+  font-size: 2em;
+  background: #AD1457;
+  border: 0;
+  padding: 0 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
